@@ -107,6 +107,7 @@ classdef ephys < handle
                 case 'npix'
                     obj.fileType = '.ap.bin';
                 case 'nexus'
+                    obj.fileType = '.bin';
             end
             %
             if nargin <= 1
