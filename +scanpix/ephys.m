@@ -107,7 +107,7 @@ classdef ephys < handle
                 case 'npix'
                     obj.fileType = '.ap.bin';
                 case 'nexus'
-                    obj.fileType = '.bin';
+                    obj.fileType = '.set';
             end
             %
             if nargin <= 1
@@ -667,6 +667,7 @@ classdef ephys < handle
                 case 'npix'
                     scanpix.npixUtils.loadMeta(obj,trialIterator);
                 case 'nexus'
+                    scanpix.dacqUtils.loadSet(obj,trialIterator);
             end
         end
         
@@ -690,6 +691,7 @@ classdef ephys < handle
                 case 'npix'
                     scanpix.npixUtils.loadPosNPix(obj,trialIterator);
                 case 'nexus'
+                    scanpix.dacqUtils.loadPos(obj,trialIterator);
             end
         end
         
@@ -712,6 +714,7 @@ classdef ephys < handle
                 case 'npix'
                     scanpix.npixUtils.loadSpikesNPix(obj,trialIterator,reloadFlag);
                 case 'nexus'
+                    scanpix.nexusUtils.loadSpikesNexus(obj,trialIterator,reloadFlag);
             end
             
         end
@@ -735,6 +738,7 @@ classdef ephys < handle
                 case 'npix'
                     %%%%
                 case 'nexus'
+                    %%%%
             end
             
         end
