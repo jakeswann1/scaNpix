@@ -113,6 +113,7 @@ setFile.ppm_org     = []; % will be populated when loading pos data
 setFile.trialType   = []; % no method yet for dacq data to gather that
 setFile.trackLength = []; % no method yet for dacq data to gather that
 setFile.envSize     = []; % no method yet for dacq data to gather that
+setFile.offset      = []; % will be populated when loading spikes
 
 % output
 if isempty(obj.trialMetaData)
