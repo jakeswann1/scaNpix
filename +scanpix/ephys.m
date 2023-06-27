@@ -69,9 +69,10 @@ classdef ephys < handle
             % dacq - creates class object
             %
             % Syntax:
-            %       obj = npix;
-            %       obj = npix(prmsMode);
-            %       obj = npix(prmsMode, uiFlag);
+            %       obj = ephys;
+            %       obj = ephys(type)
+            %       obj = ephys(type,prmsMode);
+            %       obj = ephys(type,prmsMode, uiFlag);
             %
             % Inputs:
             %    prmsMode    - 'default' - uses default parameter (default)
